@@ -1,0 +1,6 @@
+<% @urls.each do |url| %>
+	<p>Given url => <%= url.long_url %></p>
+	<p> Shortened url: <%= link_to url.short_url, url.long_url %></p>
+	<hr>
+<% end %>
+<%= link_to 'Create another link', root_path , class: "btn btn-success" %>
